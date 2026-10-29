@@ -6,3 +6,26 @@
 /* Original PNG already has transparency; remove the logo's white container. */
 header .brand, footer .footer-top .brand{background:transparent;padding:0;color:#fff}
 
+
+/* Light brand header: preserve the original blue/gold transparent logo. */
+header,header.scrolled{background:#fcfbf7;color:#12325a;border-bottom:1px solid #e4e6e5;height:96px}
+header.scrolled{box-shadow:0 4px 20px #082b4c0d}
+header .brand{background:transparent;padding:0;color:#12325a;gap:8px}
+header .brand img{width:150px}
+header .brand span{font-size:7px;letter-spacing:1.1px}
+header nav{color:#12325a;gap:32px;font-size:11px}
+header nav>a:hover{color:#07377c;text-decoration:underline;text-underline-offset:6px}
+header nav .nav-cta{background:#07377c;color:white;border:1px solid #07377c;padding:14px 20px}
+header nav .nav-cta:hover{background:#0a4799;color:white;text-decoration:none}
+header .nav-cta span{color:#f2af00}
+header #menu{color:#07377c;border-color:#bfcbd8;background:transparent}
+.hero-ctas{display:flex;flex-direction:column;align-items:flex-start;gap:16px;flex-shrink:0}
+.hero-quote{display:flex;align-items:center;justify-content:space-between;gap:30px;background:#f2af00;color:#08294d;padding:16px 23px;font-size:13px;font-weight:700}
+.hero-quote:hover{background:#ffd056}
+.hero-about{color:white;font-size:12px;display:flex;gap:28px;padding:2px 0;border-bottom:1px solid #ffffff70}
+.hero-lower{max-width:1100px;gap:50px}
+.hero-lower p{max-width:520px;font-size:14px;line-height:1.9}
+.hero h1{font-size:clamp(66px,7.3vw,110px)}
+@media(max-width:1100px){header nav{gap:20px;font-size:10px}header .brand img{width:140px}.hero h1{font-size:80px}}
+@media(max-width:760px){header,header.scrolled{height:82px}header .brand img{width:120px}header .brand span{font-size:5.8px;letter-spacing:.8px}header nav{top:82px;background:#fcfbf7;color:#12325a;border-bottom:1px solid #dce2e8;padding:20px 6% 26px;font-size:11px;gap:7px}header nav .nav-cta{margin-top:8px}.hero{min-height:800px;padding-top:142px}.hero h1{font-size:clamp(56px,10.7vw,78px)}.hero-lower{margin-top:26px}.hero-lower p{font-size:12px;max-width:420px}.hero-ctas{margin-top:25px;gap:15px}.hero-quote{padding:14px 20px;font-size:12px}.hero-about{font-size:11px}}
+@media(max-width:390px){.hero h1{font-size:54px}.hero{min-height:810px}.hero-lower p{font-size:12px}}
